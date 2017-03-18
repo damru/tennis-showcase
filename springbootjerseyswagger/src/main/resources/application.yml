@@ -1,0 +1,13 @@
+# main entry point for the application
+server:
+    port : 8081
+    contextPath : /kata/tennis # main url
+    #servlet-path: /doc # url for spring monitiring & swagger
+spring:
+    application:
+        name: Kata Tennis API with Jersey
+    jersey:
+        application-path: /api # url for API with Jersey
+
+# API documentation
+springfox.documentation.swagger.v2.path: /api-docs

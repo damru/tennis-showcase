@@ -1,0 +1,8 @@
+# main entry point for the application
+server:
+    port : 8082
+    contextPath : /kata/tennis # main url
+    #servlet-path: /doc # url for spring monitiring & swagger
+spring:
+    application:
+        name: Kata Tennis API with Spring MVC
