@@ -11,3 +11,5 @@ rebel.xml
 
 target/
 .factorypath
+
+\.vscode/

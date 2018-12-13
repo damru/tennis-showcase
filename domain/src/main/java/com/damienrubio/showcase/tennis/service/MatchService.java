@@ -48,7 +48,7 @@ public class MatchService {
      * @return
      */
     public Point getScore(Match match, Joueur joueur) {
-        return (Point) getJeuEnCours(match).getScores().get(joueur);
+        return getJeuEnCours(match).getScores().get(joueur);
     }
 
     /**
@@ -115,8 +115,8 @@ public class MatchService {
         Joueur adversaire = match.getJoueur1().equals(joueur) ?
                 match.getJoueur2()
                 : match.getJoueur1();
-        Point scoreJoueur = (Point) jeuEnCours.getScores().get(joueur);
-        Point scoreAdversaire = (Point) jeuEnCours.getScores().get(adversaire);
+        Point scoreJoueur = jeuEnCours.getScores().get(joueur);
+        Point scoreAdversaire = jeuEnCours.getScores().get(adversaire);
 
         switch (scoreJoueur) {
             case NUL:

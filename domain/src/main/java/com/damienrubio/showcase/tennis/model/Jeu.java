@@ -44,11 +44,11 @@ public class Jeu {
         this.addScore(joueur2, Point.NUL);
     }
 
-    public Map getScores() {
+    public Map<Joueur, Point> getScores() {
         return this.scores;
     }
 
-    public void setScores(Map scores) {
+    public void setScores(Map<Joueur, Point> scores) {
         this.scores = scores;
     }
 

@@ -25,11 +25,11 @@ public class TieBreak extends Jeu {
         this.addScore(joueur2, 0);
     }
 
-    public void setScores(Map scores) {
+    public void setScores(Map<Joueur, Integer> scores) {
         this.scores = scores;
     }
 
-    public Map getScores() {
+    public Map<Joueur, Integer> getScores() {
         return this.scores;
     }
 
